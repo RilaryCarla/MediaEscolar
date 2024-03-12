@@ -38,6 +38,22 @@ namespace MediaEscolar
             }
 
             Console.ReadKey();
+
+            // && || 
+
+            if ( media >= 7 && presenca >= 75 || media >= 4 && presenca >= 75)
+            {
+                Console.WriteLine("O aluno está aprovado!");
+            }
+            else if ( media >= 7 && presenca < 75 || media >= 4 && presenca < 75)
+            {
+                Console.WriteLine("O aluno está reprovado!");
+            }
+            else
+            {
+                Console.WriteLine("O aluno está Retido");
+            }
+            Console.ReadKey();
         }
     }
 }
